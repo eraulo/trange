@@ -47,4 +47,4 @@ def trange(first=0, number=0, step=0 ):
         return
 
 if __name__ == '__main__':
-    trange(*args)
+    trange()
