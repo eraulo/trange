@@ -2,7 +2,7 @@
 
 __author__ = "Mariano de Deus dedeus_mariano@yahoo.com"
 
-def trange(first=0, number=0, step=0 ):
+def Range(first=0, number=0, step=0 ):
     if (first or number or step) and number:
         if number:
             rlist = [first]
@@ -47,4 +47,4 @@ def trange(first=0, number=0, step=0 ):
         return
 
 if __name__ == '__main__':
-    trange()
+    Range()
