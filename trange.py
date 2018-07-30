@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-__author__="Mariano de Deus dedeus_mariano@yahoo.com"
+__author__ = "Mariano de Deus dedeus_mariano@yahoo.com"
 
 def trange(first=0, number=0, step=0 ):
     if (first or number or step) and number:
