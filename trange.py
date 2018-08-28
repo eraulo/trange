@@ -49,5 +49,20 @@ def Range(first=None, number=None, step=None):
     else:
         raise ValueError("Range() arg 3 must not be zero")
 
+
+def Enumerate(iterable, number=0):
+    tlista = []
+    count = 0
+    for item in Range(len(iterable)):
+        if number:
+            tlista += [(number + count, iterable[item])]
+            count += 1
+        else:
+            tlista += [(item, iterable[item])]
+    if len(tlista) != 0:
+        for item in tlista:
+            yield tuple(item)
+
 if __name__ == '__main__':
     Range()
+    Enumerate()
